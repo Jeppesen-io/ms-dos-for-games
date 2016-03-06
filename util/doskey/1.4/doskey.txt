@@ -1,0 +1,20 @@
+
+DOSKEY.COM  Freeware license
+
+Copyright (c) 2002 by Paul Houle [http://paulhoule.com].  All rights reserved.
+
+This software is being distributed as Freeware.  It may be freely used.
+
+The software may be distributed in its unmodified form as long as there is
+no commercial gain and all original files are included.
+
+By using the software, you agree to this and to the following:
+
+This software is provided "AS IS."  ALL WARRANTIES OR CONDITIONS ARE
+DISCLAIMED, EITHER EXPRESS OR IMPLIED.  The user is solely responsible for
+determining the appropriateness of its use and assumes all associated
+risks.  In no event shall the author be liable for any damages, including
+but not limited to any lost profits, whether resulting from impaired or
+lost data, software or computer failure or any other cause, or for any
+other claim by the user or by any third party.
+
