@@ -1,0 +1,101 @@
+;************************************************************************
+;*
+;*  Chapter 1. How to use this patch file?
+;*
+;*      This file (RTSPKT.TXT) contains info. that helps you patch
+;*      'RTSPKT.COM'(v3.41) file into your own packet driver.
+;*
+;*	To generate your custom driver, please follow the steps
+;*	described below:
+;*
+;*	a). Follow the instructions to edit the message area in each
+;*	    line. Save this file when you finish editing.
+;*	    ( see CHAPTER 2 for more details ! )
+;*
+;*	   !!! NOTE: DO NOT EDIT THE OFFSET AND LENGTH AREA !!!
+;*
+;*	b). Make sure that you have the following files in your working
+;*	    directory:
+;*
+;*		RTPATCH.EXE	------->   The patch execution file
+;*              RTSPKT.COM      ------->   RTL8139(X) packet driver file
+;*              RTSPKT.TXT      ------->   RTSPKT.COM patch info. file
+;*
+;*	c). After you decide the name for your packet driver,
+;*	    simply type:
+;*
+;*          > rtpatch  rtspkt.com  rtspkt.txt  <put driver name here>  <?
+;*
+;*	   !!! NOTE: DO NOT USE THE SAME DRIVER NAME AS THE ORIGINAL
+;*		     DRIVER!!!
+;*
+;*	d). If no error occurs, you should find your custom driver is
+;*	    generated under your working directory.
+;*
+;*
+;* Chapter 2. How to edit this file ?
+;*
+;*
+;*	Each line in this file contains a display message info. of the
+;*	driver. Each line has the same format:
+;*
+;*	    <offset> <length> <message>
+;*	e.g.
+;*           1266      28      'Packet driver for RTL8139(X)',0dh,0ah,'$';
+;*	     ----      --      ----------------------------------------
+;*	       		  				     
+;*	  Do not edit here!	  |				    | EOL
+;*	       	      Put your own message here!	    |
+;*	    (HEX)     (DEC)					delimiter
+;*
+;*
+;*
+;*	*NOTE: DO NOT EDIT THE <offset> AND <length> AREA !!!
+;*
+;*	*NOTE: Anything after comment character ';' will be ignored!
+;*
+;*	*NOTE: Always add ';'(EOL) at end of each line!
+;*
+;*	*NOTE: If delimiter is needed, keep delimiter intact! In this case,
+;*	       leave the '$' as the last byte.
+;*
+;*	*NOTE: 0H can only be added as delimiter! Message after 0H will be lost!
+;*
+;*	*NOTE: Total length of your message should not exceed <length>.
+;*
+;*	*NOTE: If you must use the comment character (;) in your message,
+;*	       put 3bh instead of ';'.
+;*
+;*	*NOTE: Do not exceed 250 characters in each line.
+;*
+;************************************************************************
+
+;************************************************************************
+;       Put your Vendor ID and Device ID
+;************************************************************************
+
+7419  2 ech,10h;   Vendor ID
+7416  2 39h,81h;   Device ID
+
+;************************************************************************
+;       Put your Vendor ID and Device ID of CardBus
+;************************************************************************
+
+7629  2 ech,10h;   Vendor ID
+7626  2 38h,81h;   Device ID
+
+;************************************************************************
+;	Put your driver name here  (no delimiter)
+;************************************************************************
+
+4c7c 8 'RTSPKT',0h;
+7204 8 'RTSPKT',20h,20h;
+
+;************************************************************************
+;	Put your driver title here ( delimiter is '$')
+;************************************************************************
+
+724d 120 'Packet driver for Realtek RTL8139 Family PCI/Cardbus Fast Ethernet NIC, version 3.30',0dh,0ah,'$';
+7968 120 'Copyright 2000(c), Realtek Semiconductor Inc.',0dh,0ah,0dh,0ah,'$';
+
+
