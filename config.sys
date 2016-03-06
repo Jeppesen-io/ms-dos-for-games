@@ -1,0 +1,29 @@
+[MENU]
+REM forces DOS to skip the normal 2-second delay seen after MS-DOS prompt
+SWITCHES=/F
+MENUITEM=Default, EMM and XMS
+MENUITEM=USB, Enable USB thumb drive
+MENUITEM=TCPIP, TODO
+MENUDEFAULT=Default,10
+MENUCOLOR= 7,0
+
+[COMMON]
+LASTDRIVEHIGH=D
+DEVICE=C:\DOS\HIMEM.SYS /TESTMEM:OFF
+DOS=HIGH,UMB
+FILES=40
+BUFFERS=5
+
+REM use cutemouse
+INSTALL=c:\drivers\ctmouse.exe
+
+[Default]
+rem This will also provide UMB memory by using the "ram" option if UMBPCI is not used.
+DEVICEHIGH=C:\DOS\EMM386.EXE ram auto
+
+[USB]
+rem load the USB drivers
+DEVICEHIGH=c:\drivers\usbaspi.sys /v
+DEVICEHIGH=c:\drivers\di1000dd.sys
+
+[TCPIP]
