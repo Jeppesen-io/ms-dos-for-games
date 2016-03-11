@@ -1,1 +1,0 @@
-@for %%i in (BR DE EN ES FR HU IT LV NL PL PT SK) do call national %%i
