@@ -1,0 +1,35 @@
+
+
+
+       READ THIS!
+
+       This is a beta-version of the program. It might contain several
+       bugs. If this makes you feel uncomfortable, don't use the program,
+       but wait until the `real' version is available.
+
+
+       If you do not accept the following, please do not use the program:
+
+           * The program should not be used longer than three months after
+             the release date. At that time a new version should be
+             available at the same location you got this one.
+
+           * Any bugs (minor or major) must be reported to the author.
+             See the .DOC-file for my full address. I'm also happy to
+             know of any spelling or grammatical errors in the text-files.
+
+           * If you give this program to others, you must let them know
+             that this is a beta-version, and tell them to read this file.
+             When a new version is available, you are responsible for
+             giving it to those you gave the beta-version. That way all
+             beta-versions will disappear. If you don't want this
+             responsibility, don't make the program available to others.
+
+       If all this demanding talk didn't frighten you away, start enjoying
+       the program now. I hate saying all this, but I want as few as
+       possible of _my_ bugs beeing spread around the world! :-)
+
+
+                                                      Sverre.
+
+
