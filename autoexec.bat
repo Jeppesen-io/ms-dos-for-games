@@ -8,4 +8,4 @@ REM ==== Mouse driver
 %UTIL%\ctmouse\autoexec.bat
 
 REM ==== Sound drivers
-%UTIL%\sound\autoexec.bat
+%UTIL%\sound\autoexec.bat awe64
